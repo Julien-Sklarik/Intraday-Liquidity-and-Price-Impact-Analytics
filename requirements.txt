@@ -1,0 +1,8 @@
+pandas
+numpy
+matplotlib
+statsmodels
+mplfinance
+tqdm
+zstandard
+pyarrow
