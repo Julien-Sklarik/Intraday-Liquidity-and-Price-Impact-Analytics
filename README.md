@@ -1,9 +1,7 @@
 # Intraday Liquidity and Price Impact Analytics
 
-I turned my UC Berkeley microstructure work into a clean research project that a hiring manager can clone and run. 
 I analyze one day in US equities and one day in major FX pairs. I rebuild top of book liquidity, compute spreads and depth, 
 estimate five second price impact, and report realized variance and auto correlation. 
-I kept the code small, readable, and production friendly.
 
 ## What I built
 
@@ -14,12 +12,6 @@ I kept the code small, readable, and production friendly.
 2. FX one day study for EUR USD, EUR JPY, and USD JPY  
    I assemble one second and one minute midquote and transaction series from EBS style tables, compute realized variance and auto correlation, 
    and flag one second triangular gaps as a simple arbitrage diagnostic with a capacity proxy based on best depth.
-
-## Why this matters for trading and quant roles
-
-1. I show comfort with limit order books and event data at realistic scale  
-2. I separate data, logic, and presentation so the work is easy to extend  
-3. I reproduce known stylized facts such as the U shape in activity and the negative lag one in midquote returns
 
 ## Repo layout
 
@@ -95,8 +87,3 @@ intraday_microstructure_analytics/
 2. FX outputs land in figures/fx  
    one second and one minute midquote and transaction series png  
    csv files for variance, auto correlation, and triangular gap summary
-
-## Notes
-
-I wrote this as my own project and kept it self contained. All figures and tables regenerate from scripts. 
-No classroom templates and no course language appear in the repo. If you want me to connect it to your internal data schema I can adapt the loaders quickly.
